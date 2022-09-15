@@ -1,0 +1,20 @@
+.container {
+  position: relative;
+  
+}
+.centered {
+  position: absolute;
+  top: 30%;
+  color: white;
+  width: 70%;
+}
+.iframe {
+  width: 370px;
+  height: 400px;
+}
+@media only screen and (min-width: 400px)
+{
+  h1, h2{
+  font-size:90px;
+}
+}
