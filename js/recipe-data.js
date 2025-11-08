@@ -130,9 +130,34 @@ const recipes = [
             "Enjoy with groundnuts"
         ]
     },
- 
     {
         id: 6,
+        title: "Yam Porridge",
+        description: "Hearty yam cooked in a rich pepper sauce with vegetables. Comfort food at its best.",
+        difficulty: "medium",
+        cookTime: "35 mins",
+        servings: "4-6",
+        emoji: "🍠",
+        image: "yam-porridge",
+        tags: ["yam", "porridge", "vegetables"],
+        ingredients: [
+            "1kg yam",
+            "4 large tomatoes",
+            "2 red bell peppers",
+            "1 onion",
+            "2 cups spinach",
+            "1 cup palm oil"
+        ],
+        steps: [
+            "Peel and cut yam into chunks",
+            "Blend tomatoes and peppers",
+            "Cook yam with tomato mixture",
+            "Add palm oil and seasonings",
+            "Add vegetables and simmer"
+        ]
+    },
+    {
+        id: 7,
         title: "Vegetable Sauce",
         description: "Mixed vegetable sauce that pairs perfectly with rice, yam, or plantain.",
         difficulty: "easy",

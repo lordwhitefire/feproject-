@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Odin Recipes - Share your Nigerian cuisine stories, ask questions, or request new recipes. We love hearing from fellow food enthusiasts!">
+    <meta name="keywords" content="contact Odin Recipes, Nigerian cuisine inquiries, recipe requests, food stories, cooking questions">
+    <meta property="og:title" content="Contact Us - Odin Recipes">
+    <meta property="og:description" content="Connect with us about Nigerian recipes, cooking tips, and food stories.">
+    <meta property="og:type" content="website">
+    <title>Contact Us - Authentic Nigerian Cuisine | Odin Recipes</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>">
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Odin Recipes</h1>
+                <span>Authentic Nigerian Cuisine</span>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#recipes" class="nav-link">Recipes</a></li>
+                <li><a href="recipes/about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="contact-title">Get in Touch</h1>
+                <p class="contact-subtitle">Share your Nigerian cuisine stories, ask cooking questions, or request new recipes. We love hearing from fellow food enthusiasts!</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="contact-main">
+        <div class="container">
+            <div class="contact-layout-wrapper">
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <section class="contact-form-section">
+                    <h2 class="section-title reveal">Send Us a Message</h2>
+                    <p class="section-subtitle reveal">Fill out the form below and we'll get back to you within 24 hours</p>
+                    
+                    <form id="contactForm" class="contact-form reveal" novalidate>
+                        <!-- Honeypot for spam prevention -->
+                        <div class="honeypot" aria-hidden="true" hidden>
+                            <label for="website">Leave this field empty</label>
+                            <input type="text" id="website" name="website" autocomplete="off">
+                        </div>
+                        
+                        <!-- Name Fields -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">
+                                    First Name <span class="required" aria-label="required">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="firstName" 
+                                    name="firstName" 
+                                    class="form-control" 
+                                    required 
+                                    minlength="2"
+                                    maxlength="50"
+                                    autocomplete="given-name"
+                                    aria-describedby="firstName-error firstName-success"
+                                />
+                                <span class="error-message" id="firstName-error" role="alert"></span>
+                                <span class="success-message" id="firstName-success" role="status"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">
+                                    Last Name <span class="required" aria-label="required">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="lastName" 
+                                    name="lastName" 
+                                    class="form-control" 
+                                    required 
+                                    minlength="2"
+                                    maxlength="50"
+                                    autocomplete="family-name"
+                                    aria-describedby="lastName-error lastName-success"
+                                />
+                                <span class="error-message" id="lastName-error" role="alert"></span>
+                                <span class="success-message" id="lastName-success" role="status"></span>
+                            </div>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                Email Address <span class="required" aria-label="required">*</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-control" 
+                                required 
+                                maxlength="100"
+                                autocomplete="email"
+                                aria-describedby="email-error email-success"
+                            />
+                            <span class="error-message" id="email-error" role="alert"></span>
+                            <span class="success-message" id="email-success" role="status"></span>
+                        </div>
+
+                        <!-- Subject Field -->
+                        <div class="form-group">
+                            <label for="subject" class="form-label">
+                                Subject <span class="required" aria-label="required">*</span>
+                            </label>
+                            <select 
+                                id="subject" 
+                                name="subject" 
+                                class="form-control" 
+                                required
+                                aria-describedby="subject-error subject-success"
+                            >
+                                <option value="">Select a topic...</option>
+                                <option value="recipe-request">Request a Recipe</option>
+                                <option value="cooking-question">Cooking Question</option>
+                                <option value="feedback">Website Feedback</option>
+                                <option value="story">Share Your Food Story</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subject-error" role="alert"></span>
+                            <span class="success-message" id="subject-success" role="status"></span>
+                        </div>
+
+                        <!-- Related Recipe (Conditional) -->
+                        <div class="form-group" id="recipeSelectionGroup" style="display: none;">
+                            <label for="relatedRecipe" class="form-label">Related Recipe (Optional)</label>
+                            <input 
+                                type="text" 
+                                id="relatedRecipe" 
+                                name="relatedRecipe" 
+                                class="form-control"
+                                placeholder="e.g., Egusi Soup, Jollof Rice"
+                                maxlength="100"
+                                autocomplete="off"
+                            />
+                            <span class="help-text">If your inquiry is about a specific recipe, mention it here</span>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                Your Message <span class="required" aria-label="required">*</span>
+                            </label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-control" 
+                                required 
+                                minlength="10"
+                                maxlength="1000"
+                                rows="6"
+                                aria-describedby="message-error message-success character-count"
+                                placeholder="Tell us about your cooking experience, ask a question, or share your story..."
+                            ></textarea>
+                            <div class="field-meta">
+                                <span class="error-message" id="message-error" role="alert"></span>
+                                <span class="success-message" id="message-success" role="status"></span>
+                                <span class="character-count" id="character-count" aria-live="polite">
+                                    <span class="current">0</span> / <span class="max">1000</span> characters
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Consent Checkbox -->
+                        <div class="form-group checkbox-group">
+                            <input 
+                                type="checkbox" 
+                                id="consent" 
+                                name="consent" 
+                                required
+                                aria-describedby="consent-error"
+                            />
+                            <label for="consent" class="checkbox-label">
+                                I agree to be contacted about my inquiry <span class="required" aria-label="required">*</span>
+                            </label>
+                            <span class="error-message" id="consent-error" role="alert"></span>
+                        </div>
+
+                        <!-- Submit Section -->
+                        <div class="form-actions">
+                            <div class="submission-status" role="status" aria-live="polite">
+                                <div class="sending" aria-hidden="true">
+                                    <span class="spinner" aria-hidden="true"></span>
+                                    <span>Sending your message...</span>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-icon" aria-hidden="true">💌</span>
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Contact Info Sidebar -->
+                <aside class="contact-info-section" aria-labelledby="contact-info-title">
+                    <h2 id="contact-info-title" class="contact-info-title reveal">Other Ways to Connect</h2>
+                    
+                    <div class="info-cards">
+                        <div class="info-card reveal">
+                            <div class="info-icon" aria-hidden="true">📧</div>
+                            <h3>Email Us</h3>
+                            <p>For longer inquiries or recipe requests that need attachments.</p>
+                            <a href="mailto:hello@odinrecipes.com" class="info-link">hello@odinrecipes.com</a>
+                        </div>
+
+                        <div class="info-card reveal">
+                            <div class="info-icon" aria-hidden="true">💬</div>
+                            <h3>Join Community</h3>
+                            <p>Connect with other Nigerian food enthusiasts in our forum.</p>
+                            <button class="btn btn-secondary btn-small" onclick="alert('Community feature coming soon!')">Join Forum</button>
+                        </div>
+
+                        <div class="info-card reveal">
+                            <div class="info-icon" aria-hidden="true">📱</div>
+                            <h3>Follow Us</h3>
+                            <p>Get daily recipe inspiration on our social media channels.</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook" class="social-link">f</a>
+                                <a href="#" aria-label="Instagram" class="social-link">📷</a>
+                                <a href="#" aria-label="Twitter" class="social-link">𝕏</a>
+                                <a href="#" aria-label="Pinterest" class="social-link">📌</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card reveal">
+                            <div class="info-icon" aria-hidden="true">🕐</div>
+                            <h3>Response Time</h3>
+                            <p>We typically respond within 24 hours on business days.</p>
+                            <small>Weekends may take longer</small>
+                        </div>
+                    </div>
+
+                    <div class="faq-section reveal">
+                        <h3>Quick Answers</h3>
+                        <details class="faq-item">
+                            <summary>Can I share my own recipe?</summary>
+                            <p>Absolutely! Use this form to submit your Nigerian recipe. We'll review and may feature it with credit.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Do you offer cooking classes?</summary>
+                            <p>We're planning virtual cooking classes. Sign up to be notified when they launch!</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Can I use your recipes in my restaurant?</summary>
+                            <p>Yes, for personal use. For commercial use, please reach out for licensing.</p>
+                        </details>
+                    </div>
+                </aside>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Odin Recipes</h3>
+                    <p>Sharing the rich flavors of Nigerian cuisine with the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#recipes">All Recipes</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Pinterest">📌</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Odin Recipes. Made with ❤️ for Nigerian cuisine.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top">⬆️</button>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- JavaScript -->
+    <script src="js/utils.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
