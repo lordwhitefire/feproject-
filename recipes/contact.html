@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Odin Recipes - Get in touch with Whitefire for recipe suggestions, collaborations, or just to say hello!">
+    <meta name="keywords" content="contact odin recipes, whitefire developer, recipe suggestions, food blog contact, nigerian recipes contact">
+    <title>Contact Us - Odin Recipes | Authentic Nigerian Cuisine</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📧</text></svg>">
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Odin Recipes</h1>
+                <span>Authentic Nigerian Cuisine</span>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#recipes" class="nav-link">Recipes</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="contact-title">Get In Touch</h1>
+                <p class="contact-subtitle">Have questions, recipe suggestions, or just want to say hello? I'd love to hear from you!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" class="contact-main">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Info Section -->
+                <section class="contact-info">
+                    <h2>Let's Connect</h2>
+                    <p>
+                        Whether you have a recipe suggestion, want to collaborate, 
+                        or just want to chat about Nigerian food, I'm here for it!
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-content">
+                                <h3>Email</h3>
+                                <p>whitefire@odinrecipes.com</p>
+                                <span class="method-note">I usually respond within 24 hours</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">💼</div>
+                            <div class="method-content">
+                                <h3>Developer Profile</h3>
+                                <p>Frontend Developer since August 2022</p>
+                                <span class="method-note">Open to collaborations</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">🍲</div>
+                            <div class="method-content">
+                                <h3>Recipe Requests</h3>
+                                <p>Have a Nigerian dish you'd like to learn?</p>
+                                <span class="method-note">I'll research and create it!</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h3>Follow My Journey</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Email" class="social-link">
+                                <span>📧</span>
+                                <span>Email</span>
+                            </a>
+                            <a href="#" aria-label="GitHub" class="social-link">
+                                <span>💻</span>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <span>💼</span>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="social-link">
+                                <span>🐦</span>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Form Section -->
+                <section class="contact-form-section">
+                    <h2>Send a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError">Please enter your name</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError">Please enter a valid email</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="recipe-request">Recipe Request</option>
+                                <option value="suggestion">Recipe Suggestion</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="question">General Question</option>
+                            </select>
+                            <span class="error-message" id="subjectError">Please select a subject</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" required 
+                                      placeholder="Tell me about your favorite Nigerian dish or share your thoughts..."></textarea>
+                            <span class="error-message" id="messageError">Please enter your message</span>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                I'd like to receive updates about new recipes and features
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                        
+                        <div class="form-success" id="formSuccess" style="display: none;">
+                            <span>✅</span>
+                            <p>Thank you! Your message has been sent successfully. I'll get back to you soon!</p>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- FAQ Section -->
+                <section class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Can I request a specific Nigerian recipe?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolutely! I love discovering new recipes and sharing them. Just send me a message with the dish name, and I'll research and create a detailed recipe for you.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Do you offer cooking classes or tutorials?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Currently, I focus on written recipes with detailed instructions. However, I'm working on adding video tutorials soon! Stay tuned for updates.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Can I collaborate with you on a project?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>I'm always open to collaborations! Whether you're a food blogger, photographer, or have a great idea, let's chat about how we can work together.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How long have you been developing websites?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>I've been a frontend developer since August 2022. Odin Recipes was actually my first major project where I combined my love for coding with my passion for Nigerian cuisine!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Odin Recipes</h3>
+                    <p>Sharing the rich flavors of Nigerian cuisine with the world.</p>
+                    <p class="developer-credit">Made with ❤️ by Whitefire</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#recipes">All Recipes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Email">📧</a>
+                        <a href="#" aria-label="GitHub">💻</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                    <p class="developer-info">
+                        Developer since August 2022<br>
+                        Passionate about food & code
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Odin Recipes. Made with ❤️ for Nigerian cuisine.</p>
+                <p class="developer-signature">Developed by Whitefire | Frontend Developer since August 2022</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top">⬆️</button>
+
+    <!-- Contact Page JavaScript -->
+    <script src="../js/utils.js"></script>
+    <script>
+        // Form handling
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = contactForm.querySelector('.submit-btn');
+        const btnText = submitBtn.querySelector('.btn-text');
+        const btnLoading = submitBtn.querySelector('.btn-loading');
+        const formSuccess = document.getElementById('formSuccess');
+
+        // Form validation
+        function validateForm() {
+            let isValid = true;
+            const fields = ['name', 'email', 'subject', 'message'];
+            
+            fields.forEach(fieldName => {
+                const field = document.getElementById(fieldName);
+                const error = document.getElementById(fieldName + 'Error');
+                
+                if (!field.value.trim()) {
+                    field.classList.add('error');
+                    error.style.display = 'block';
+                    isValid = false;
+                } else {
+                    field.classList.remove('error');
+                    error.style.display = 'none';
+                }
+                
+                // Email validation
+                if (fieldName === 'email' && field.value) {
+                    const emailRegex = /^

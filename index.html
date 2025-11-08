@@ -1,35 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="odin-recipe">
-    <title>odin recipes</title>
-    <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Noto Sans&effect=fire">
-  </head>
-  <body>
-    <h1 class="font-effect-fire"> odin recipes</h1>
-    <img src="images.jpeg" style="width:100% "></br>
-    <p>
-If you want to cook food, you need to know the recipe hehehe 😁. There are thousands of different dishes that you can prepare and ultimately, all you have to do is follow the recipe. Some recipes are easier than others are to follow, but as with all things, the more you cook, the easier it becomes. Here you can find some recipes for few  types of food so that you can cook whenever your stomach desires.
-</p></br>
-<img src="images1.jpeg" style="width:100%"></br>
-    <p>odin recipes are always a delight. If you are familiar with odin  recipes, you will know that rich foods like  Jollof Rice, egusi soup, ogbono soup and more are very dear to our hearts.
-	</p>
-	
+    <meta name="description" content="Authentic Nigerian recipes - from jollof rice to egusi soup">
+    <title>Odin Recipes - Authentic Nigerian Cuisine</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Odin Recipes</h1>
+                <span>Authentic Nigerian Cuisine</span>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#recipes" class="nav-link">Recipes</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<ul>
- <li><a href="recipes/egusi.html">egusi soup</a></li>
- <li><a href="recipes/garri.html">garri</a></li>
- <li><a href="recipes/jollof rice.html">jollof rice</a></li>
- <li><a href="recipes/ogbono.html">ogbono soup</a></li>
- <li><a href="recipes/okra.html">okra soup</a></li>
- <li><a href="recipes/porridge.html">porridge</a></li>
- <li><a href="recipes/sauce.html">sauce</a></li>
-  </ul>
-	<p>
-above are few  included compilations of odin’s favorite food, so let’s get the party starteeedddd!!!!🥳🥳🥳
-</p>
-  </body>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h2 class="hero-title">Welcome to the Heart of Nigerian Cooking</h2>
+                <p class="hero-description">
+                    Discover the rich, vibrant flavors of Nigeria through authentic recipes passed down through generations. From the legendary jollof rice to the comforting warmth of egusi soup.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#recipes" class="btn btn-primary">Explore Recipes</a>
+                    <a href="#about" class="btn btn-secondary">Our Story</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-placeholder">
+                    <span>🍲</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="recipes">
+        <div class="container">
+            <h2 class="section-title">Our Signature Recipes</h2>
+            <p class="section-subtitle">Each recipe carries the soul of Nigerian hospitality</p>
+            
+            <div class="recipe-grid" id="recipeGrid">
+                <!-- Recipe cards injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content">
+                <p>Odin recipes are always a delight. If you are familiar with odin recipes, you will know that rich foods like Jollof Rice, egusi soup, ogbono soup and more are very dear to our hearts.</p>
+                <p>These recipes have been passed down through generations, each carrying the warmth and hospitality that Nigerian cuisine is known for.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Odin Recipes. Made with ❤️ for Nigerian cuisine.</p>
+        </div>
+    </footer>
+
+    <script src="js/recipe-data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
