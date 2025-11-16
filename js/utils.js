@@ -229,30 +229,33 @@ const form = {
 // Toast Notifications
 const toast = {
     show: (message, type = 'info', duration = 3000) => {
+        // Build the toast element and its children **with real DOM nodes**
         const toastElement = createElement('div', {
-            className: `toast toast-${type}`,
-            innerHTML: `
-                <span class="toast-message">${message}</span>
-                <button class="toast-close">&times;</button>
-            `
-        });
-        
+            className: `toast toast-${type}`
+        }, [
+            // Message span
+            createElement('span', { className: 'toast-message' }, [message]),
+            // Close button
+            createElement('button', { className: 'toast-close' }, ['×'])
+        ]);
+
+        // Add to page
         document.body.appendChild(toastElement);
-        
-        // Auto remove
+
+        // Auto-remove after `duration`
         setTimeout(() => {
             animate.fadeOut(toastElement, 300);
             setTimeout(() => toastElement.remove(), 300);
         }, duration);
-        
-        // Manual close
-        toastElement.querySelector('.toast-close').addEventListener('click', () => {
+
+        // Manual close – now the button **actually exists**
+        const closeBtn = toastElement.querySelector('.toast-close');
+        closeBtn.addEventListener('click', () => {
             animate.fadeOut(toastElement, 300);
             setTimeout(() => toastElement.remove(), 300);
         });
     }
 };
-
 // Shopping List Manager
 const shoppingList = {
     items: storage.get('shoppingList') || [],

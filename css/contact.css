@@ -414,7 +414,7 @@
 /* Tablet Responsiveness */
 @media (max-width: 768px) {
     .contact-layout {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: var(--spacing-lg);
     }
 
@@ -449,6 +449,8 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 480px) {
+     
+    
     .contact-title {
         font-size: 2rem;
     }
